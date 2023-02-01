@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<object class="kapow.robot.common.domain.Type" serializationversion="0">
+  <prologue>
+    <saved-by-versions>
+      <version>10.4.0.1</version>
+    </saved-by-versions>
+  </prologue>
+  <property name="attributes" class="kapow.robot.common.domain.Attributes">
+    <object class="kapow.robot.common.domain.Attribute" serializationversion="0">
+      <property name="name" class="String">username</property>
+      <property name="type" class="kapow.robot.plugin.common.domain.StringAttributeType" id="0"/>
+      <property name="comment" class="String">admin ユーザー名</property>
+    </object>
+    <object class="kapow.robot.common.domain.Attribute" serializationversion="0">
+      <property name="name" class="String">password</property>
+      <property name="type" class="kapow.robot.plugin.common.domain.PasswordAttributeType"/>
+      <property name="comment" class="String">admin ユーザーのログインパスワード</property>
+    </object>
+    <object class="kapow.robot.common.domain.Attribute" serializationversion="0">
+      <property name="name" class="String">hostname</property>
+      <property name="type" idref="0"/>
+      <property name="comment" class="String">バックアップを取得する Management Console のホスト名（80や443以外のポートを使っているときにはポートの指定も必要）</property>
+    </object>
+    <object class="kapow.robot.common.domain.Attribute" serializationversion="0">
+      <property name="name" class="String">filename</property>
+      <property name="showSeparatorBefore" class="Boolean">true</property>
+      <property name="separatorTitle" class="String">出力ファイル</property>
+      <property name="type" idref="0"/>
+      <property name="comment" class="String">バックアップファイルを出力するファイル名（ファイルパス\ファイル名）</property>
+    </object>
+  </property>
+</object>
